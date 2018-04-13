@@ -1,5 +1,5 @@
 <h1>Songs</h1>
-  <%= form_tag songs_upload_path, multipart: true do %>
+  <%= form_tag songs_upload_path, headers: true do %>
     <%= file_field_tag :songs %>
     <%= submit_tag "Import Songs" %>
   <% end %>
